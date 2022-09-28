@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import ThemeWrapper from '$layout/ThemeWrapper';
 import Header from '$layout/Header';
 import Footer from '$layout/Footer';

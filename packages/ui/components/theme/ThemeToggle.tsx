@@ -2,7 +2,7 @@ type Props = {
   onClick: () => void;
 };
 
-export default function ThemeToggle({ onClick }: Props) {
+export function ThemeToggle({ onClick }: Props) {
   return (
     <button className="p-1 theme-toggle-btn" onClick={onClick}>
       <svg className="h-6 md:h-8" aria-hidden="true" viewBox="0 0 24 24">

@@ -28,7 +28,7 @@ const defaultTransition: Transition = {
   delay: 0.4,
 };
 
-export default function GenericAnimation({
+export function GenericAnimation({
   children,
   variants = defaultVariants,
   transition = defaultTransition,

@@ -21,6 +21,7 @@ export default function Nav() {
           return (
             <li key={i}>
               <NavLink
+                end
                 to={to}
                 className={({ isActive }) =>
                   isActive

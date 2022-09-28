@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-react-v2",
+  "name": "turborepo-react",
   "version": "0.0.0",
   "private": true,
   "workspaces": [

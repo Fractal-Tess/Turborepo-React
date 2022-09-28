@@ -26,7 +26,7 @@ export default function Header() {
 
       <div className="[&>*:hover]:text-primary [&>*]:duration-300 [&>*]:transition-colors flex items-center space-x-2">
         <Anchor
-          href="https://github.com/Fractal-Tess/Turborepo-React-v2"
+          href="https://github.com/Fractal-Tess/Turborepo-React"
           newTab={true}
           rel="noopener noreferrer"
         >

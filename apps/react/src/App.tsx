@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Layout from '$layout/BaseLayout';
+import BaseLayout from '$layout/BaseLayout';
 import Home from '$routes/Home';
 import NotFound from '$routes/NotFound';
 import About from '$routes/About';
@@ -9,7 +9,7 @@ import Contact from '$routes/Contact';
 function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route element={<BaseLayout />}>
         <Route path="/" element={<Home />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/about" element={<About />}></Route>

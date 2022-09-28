@@ -17,7 +17,7 @@ export default function ThemeWrapper({ children, cookieTheme }: Props) {
     setTheme(nextTheme);
     Cookies.set('theme', nextTheme, {
       path: '/',
-      expires: new Date(new Date().getTime() + ONE_YEAR),
+      expires: new Date(new Date().getTime() + ONE_YEAR)
     });
   };
 

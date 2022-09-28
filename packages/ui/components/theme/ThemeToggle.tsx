@@ -1,5 +1,5 @@
 type Props = {
-  onClick: () => void;
+  onClick: (() => void) | undefined;
 };
 
 export function ThemeToggle({ onClick }: Props) {

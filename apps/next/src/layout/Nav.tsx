@@ -11,7 +11,7 @@ const navLinks: LinkType[] = [
   { text: 'Blog', to: '/blog' },
   { text: 'About', to: '/about' },
   { text: 'Contact', to: '/contact' },
-  { text: 'Does not exist', to: '/foo-spam-eggs' },
+  { text: 'Does not exist', to: '/foo-spam-eggs' }
 ];
 
 export default function Nav() {

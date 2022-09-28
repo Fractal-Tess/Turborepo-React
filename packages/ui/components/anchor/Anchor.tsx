@@ -12,7 +12,7 @@ export default function Anchor({
   newTab,
   rel,
   children,
-  className,
+  className
 }: Props) {
   return (
     <a

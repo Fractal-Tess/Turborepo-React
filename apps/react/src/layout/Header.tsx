@@ -32,7 +32,7 @@ export default function Header() {
         >
           <FontAwesomeIcon icon={faGithub} className="h-6" />
         </Anchor>
-        <ThemeToggle onClick={themeCtx?.toggleTheme!} />
+        <ThemeToggle onClick={themeCtx?.toggleTheme} />
       </div>
     </nav>
   );

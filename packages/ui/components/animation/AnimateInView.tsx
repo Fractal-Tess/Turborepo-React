@@ -3,7 +3,7 @@ import {
   type Variant,
   motion,
   useAnimation,
-  useInView,
+  useInView
 } from 'framer-motion';
 import { useRef, useEffect, PropsWithChildren } from 'react';
 
@@ -19,19 +19,19 @@ type Props = {
 
 const defaultVariants: Variants = {
   visible: { opacity: 1 },
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0 }
 };
 
 const defaultTransition: Transition = {
   ease: 'easeOut',
   duration: 1.5,
-  delay: 0.4,
+  delay: 0.4
 };
 
 export function GenericAnimation({
   children,
   variants = defaultVariants,
-  transition = defaultTransition,
+  transition = defaultTransition
 }: Props) {
   const controls = useAnimation();
 

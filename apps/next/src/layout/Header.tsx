@@ -4,6 +4,7 @@ import { ThemeCtx } from '$context/Theme';
 import { useContext } from 'react';
 import { ThemeToggle } from 'ui';
 import Link from 'next/link';
+import Image from 'next/image';
 import Nav from '$layout/Nav';
 
 export default function Header() {
@@ -13,7 +14,11 @@ export default function Header() {
     <div className="bg-base-100 h-12 shadow-2xl flex justify-between px-8 items-center">
       <Link href="/">
         <a className="h-full">
-          <img src="/logo.png" alt="Website logo" className="max-h-full py-1" />
+          <Image
+            src="/logo.png"
+            alt="Website logo"
+            className="max-h-full py-1"
+          />
         </a>
       </Link>
       <Nav />

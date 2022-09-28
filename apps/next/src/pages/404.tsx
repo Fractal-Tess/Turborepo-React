@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           Are you lost?
           <br />
           <br />
-          Let's go{' '}
+          Let&quot;s go &nbsp;
           <Link href="/">
             <a className="border-b-4 border-dashed border-primary text-primary-content bg-primary rounded px-2 py-1 animate-pulse">
               Home

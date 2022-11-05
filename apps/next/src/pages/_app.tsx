@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+
 import NextApp, {
   AppContext,
   AppInitialProps,
@@ -6,7 +7,7 @@ import NextApp, {
 } from 'next/app';
 
 import { Theme } from '$types';
-import { getThemeFromCookie } from '$utils';
+import { themeFromCookie } from '$utils';
 import BaseLayout from '$layout/BaseLayout';
 
 type AppProps = { cookieTheme: Theme | null };
@@ -27,8 +28,10 @@ export function App({
 App.getInitialProps = async (
   context: AppContext
 ): Promise<CombineProps<AppInitialProps>> => {
-  const cookieTheme = getThemeFromCookie(context.ctx.req?.headers.cookie);
+  const cookieTheme = themeFromCookie(context.ctx.req?.headers.cookie);
+
   const ctx = await NextApp.getInitialProps(context);
+
   return { ...ctx, cookieTheme };
 };
 
